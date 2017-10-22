@@ -1,0 +1,9 @@
+C:\Users\Vincent.Martha\CRM\TGP.Automation.CRM.WebPages\TGP.Automation.CRM.WebPages\bin\Debug\TGP.Automation.CRM.WebPages.dll
+C:\Users\Vincent.Martha\CRM\TGP.Automation.CRM.WebPages\TGP.Automation.CRM.WebPages\bin\Debug\TGP.Automation.CRM.WebPages.pdb
+C:\Users\Vincent.Martha\CRM\TGP.Automation.CRM.WebPages\TGP.Automation.CRM.WebPages\bin\Debug\WebDriver.dll
+C:\Users\Vincent.Martha\CRM\TGP.Automation.CRM.WebPages\TGP.Automation.CRM.WebPages\bin\Debug\WebDriver.Support.dll
+C:\Users\Vincent.Martha\CRM\TGP.Automation.CRM.WebPages\TGP.Automation.CRM.WebPages\bin\Debug\WebDriver.xml
+C:\Users\Vincent.Martha\CRM\TGP.Automation.CRM.WebPages\TGP.Automation.CRM.WebPages\bin\Debug\WebDriver.Support.xml
+C:\Users\Vincent.Martha\CRM\TGP.Automation.CRM.WebPages\TGP.Automation.CRM.WebPages\obj\Debug\TGP.Automation.CRM.WebPages.dll
+C:\Users\Vincent.Martha\CRM\TGP.Automation.CRM.WebPages\TGP.Automation.CRM.WebPages\obj\Debug\TGP.Automation.CRM.WebPages.pdb
+C:\Users\Vincent.Martha\CRM\TGP.Automation.CRM.WebPages\TGP.Automation.CRM.WebPages\obj\Debug\TGP.Automation.CRM.WebPages.csprojResolveAssemblyReference.cache

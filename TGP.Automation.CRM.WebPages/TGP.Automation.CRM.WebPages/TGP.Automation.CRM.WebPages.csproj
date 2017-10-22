@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9C8D2969-99A8-44BF-9704-F0CBA99D41F2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TGP.Automation.CRM.WebPages</RootNamespace>
+    <AssemblyName>TGP.Automation.CRM.WebPages</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebDriver, Version=3.5.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriver.3.5.2\lib\net40\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=3.5.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.Support.3.5.2\lib\net40\WebDriver.Support.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomerCredentials\EventTileLink.cs" />
+    <Compile Include="PageObjects\CRMWebPages.cs" />
+    <Compile Include="CustomerCredentials\CustomerInformation.cs" />
+    <Compile Include="CRMPages\AccountEnquiriesMiniWindowPage.cs" />
+    <Compile Include="CRMPages\AccountEnquiriesPage.cs" />
+    <Compile Include="CRMPages\ApplicationEnquiriesDialogWindowPage.cs" />
+    <Compile Include="CRMPages\ApplicationEnquiriesPage.cs" />
+    <Compile Include="CRMPages\NeighbourhoodsDialogPage.cs" />
+    <Compile Include="CRMPages\NeighbourhoodsPage.cs" />
+    <Compile Include="CRMPages\ResolutionPage.cs" />
+    <Compile Include="WorkFlow\GenericObjects.cs" />
+    <Compile Include="CRMPages\GuinnessInteractionPage.cs" />
+    <Compile Include="CRMPages\Pages.cs" />
+    <Compile Include="PageIntertaction\ActionControl.cs" />
+    <Compile Include="PageIntertaction\Button.cs" />
+    <Compile Include="PageIntertaction\Inbox.cs" />
+    <Compile Include="PageIntertaction\TGPLabel.cs" />
+    <Compile Include="PageIntertaction\SelectControl.cs" />
+    <Compile Include="CRMPages\PaymentDialogPage.cs" />
+    <Compile Include="CRMPages\PaymentPage.cs" />
+    <Compile Include="CRMPages\RepairsDialogWindowPage.cs" />
+    <Compile Include="CRMPages\RepairsPage.cs" />
+    <Compile Include="CRMPages\RightToBuyMiniWindowPage.cs" />
+    <Compile Include="CRMPages\RightToBuyPage.cs" />
+    <Compile Include="CRMPages\SystemDashBoardPage.cs" />
+    <Compile Include="CRMPages\TenancyEnforcementDialogWindowPage.cs" />
+    <Compile Include="CRMPages\TenancyEnforcementPage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\Browser.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
