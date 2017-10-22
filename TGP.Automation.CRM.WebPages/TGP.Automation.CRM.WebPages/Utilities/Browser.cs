@@ -244,8 +244,6 @@ namespace TGP.Automation.CRM.WebPages.Utilities
                     driver.SwitchTo().Window(allWindow[0]);
                 }
             }
-            //driver.SwitchTo().Window(allWindow[1]);
-            //driver.Close();
             driver.SwitchTo().Window(allWindow[0]);
             if (driver.WindowHandles.Count == 0 )
             {
@@ -261,7 +259,7 @@ namespace TGP.Automation.CRM.WebPages.Utilities
             string newWindowHandle = null;
             IReadOnlyCollection<string> crmWindows = driver.WindowHandles;
 
-            for (int i = 0; i < 20; i++)
+            for (int i = 0; i < 10; i++)
             {
                 if (crmWindows.Count > 1)
                 {
@@ -270,6 +268,7 @@ namespace TGP.Automation.CRM.WebPages.Utilities
                         if (allWindows != parentWindow)
                         {
                             newWindowHandle = allWindows;
+                            break;
                         }
                     }
 
