@@ -17,7 +17,7 @@ namespace TGP.TestManager.CRM.Test.Hooks
             Pages.SystemDashBoard.SelectSearchName.ClickOptions.AndStartInteraction();
             Assert.IsTrue(Pages.InteractionDashBoard.IsAt, "Cannot go to Interaction dashborad");
             Pages.InteractionDashBoard.EventTile.Navigate("Account Enquiries");
-            Assert.IsTrue(Pages.AccountEnquiryDashBoard.IsAt, "Unable to goto Account Enquiries Page");
+            Assert.IsTrue(Pages.AccountEnquiryDashBoard.IsAt, "Unable to goto Account Enquiries Page"); // Refactor all assert. is Let assert be in page dt use it
             Pages.AccountEnquiryDashBoard.AccountEnquiriesDialogWindow();
             Assert.IsTrue(Pages.AccountEnquiriesDaialog.IsAt, 
                 "Unable to open Account Enquiries Dialoque Window");
